@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday Surprise for OBU</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Scene 1: Panda Intro -->
+    <div class="scene active" id="scene1">
+        <div class="bunting-flags"></div>
+        <div class="content">
+            <div class="panda-character">🐼💖</div>
+            <p class="intro-text">A Cutiepie was born today, 18 years ago! Yes, it's YOU MY OBU no jan 21 2008 ! A little surprise awaits..</p>
+            <button class="pink-button" onclick="nextScene()">Start the surprise</button>
+        </div>
+    </div>
+
+    <!-- Scene 2: Cake Greeting -->
+    <div class="scene" id="scene2">
+        <div class="content">
+            <div class="cake-container">
+                <div class="cake">
+                    <div class="candle">
+                        <div class="flame"></div>
+                    </div>
+                </div>
+            </div>
+            <h1 class="birthday-title">Happy Birthday, Cutiepieee! OBU I LOVE YOU🫂🥹😍😘😅</h1>
+            <button class="pink-button" onclick="nextScene()">Pop the Balloons →</button>
+        </div>
+    </div>
+
+    <!-- Scene 3: Balloon Popping -->
+    <div class="scene" id="scene3">
+        <div class="content">
+            <h2 class="balloon-instruction">Pop all 5 balloons</h2>
+            <div class="balloons-container">
+                <div class="balloon-wrapper" onclick="popBalloon(this, 'You are amazing')">
+                    <div class="balloon pink" data-message="You are amazing">
+                        <div class="string"></div>
+                    </div>
+                </div>
+                <div class="balloon-wrapper" onclick="popBalloon(this, 'Wishing you joy')">
+                    <div class="balloon orange" data-message="Wishing you joy">
+                        <div class="string"></div>
+                    </div>
+                </div>
+                <div class="balloon-wrapper" onclick="popBalloon(this, 'Have a wonderful day')">
+                    <div class="balloon green" data-message="Have a wonderful day">
+                        <div class="string"></div>
+                    </div>
+                </div>
+                <div class="balloon-wrapper" onclick="popBalloon(this, 'You deserve happiness')">
+                    <div class="balloon blue" data-message="You deserve happiness">
+                        <div class="string"></div>
+                    </div>
+                </div>
+                <div class="balloon-wrapper" onclick="popBalloon(this, 'I LOVE YOU')">
+                    <div class="balloon red" data-message="I LOVE YOU">
+                        <div class="string"></div>
+                    </div>
+                </div>
+            </div>
+            <div id="message-display" class="message-display"></div>
+            <button class="pink-button hidden" id="next-after-balloons" onclick="nextScene()">Next →</button>
+        </div>
+    </div>
+
+    <!-- Scene 4: Gift Surprise Reveal -->
+    <div class="scene" id="scene4">
+        <div class="content">
+            <div class="gift-box-container">
+                <div class="gift-box" id="giftBox">
+                    <div class="gift-lid"></div>
+                    <div class="character-pop hidden" id="characterPop">💖✨</div>
+                </div>
+                <div class="confetti-container" id="confettiContainer"></div>
+            </div>
+            <p class="gift-message">Lots of love for you ♥ Once Again, Happy Birthday! Hope you loved your surprise.</p>
+            <button class="pink-button" onclick="nextScene()">Next →</button>
+        </div>
+    </div>
+
+    <!-- Scene 5: Sweet Moments Photo Swipe -->
+    <div class="scene" id="scene5">
+        <div class="content">
+            <h2 class="section-title">Some Sweet Moments (Swipe the cards)</h2>
+            <div class="photo-stack" id="photoStack">
+                <div class="photo-card" style="--rotation: -2deg; z-index: 5;">
+                    <div class="photo-frame">
+                        <div class="photo-placeholder">💕</div>
+                    </div>
+                </div>
+                <div class="photo-card" style="--rotation: 2deg; z-index: 4;">
+                    <div class="photo-frame">
+                        <div class="photo-placeholder">✨</div>
+                    </div>
+                </div>
+                <div class="photo-card" style="--rotation: -1deg; z-index: 3;">
+                    <div class="photo-frame">
+                        <div class="photo-placeholder">🌙</div>
+                    </div>
+                </div>
+                <div class="photo-card" style="--rotation: 1deg; z-index: 2;">
+                    <div class="photo-frame">
+                        <div class="photo-placeholder">⭐</div>
+                    </div>
+                </div>
+            </div>
+            <button class="pink-button" onclick="nextScene()">Open My Message</button>
+        </div>
+    </div>
+
+    <!-- Scene 6: Special Message Card -->
+    <div class="scene" id="scene6">
+        <div class="content">
+            <div class="message-card">
+                <h2 class="message-title">A Special Message</h2>
+                <div class="message-content">
+                    <p>Happy Birthday, Cutiepie!</p>
+                    <p>On this special day, I want you to know how much joy and happiness you bring into this world. Your smile lights up every room, and your kindness touches everyone around you. You have this incredible ability to make people feel cared for, loved, and seen—and that's something truly magical.</p>
+                    <p>Your heart is full of warmth, and your spirit shines so bright. Every moment with you feels like a gift, and I'm so grateful to celebrate another year of your amazing life.</p>
+                    <p>You're truly one of a kind, and I just want you to know how special you are. Keep being the amazing person you are.</p>
+                    <p>Today and always, may you be surrounded by love, laughter, and all the happiness you deserve. Here's to you, MY DEVA—may this year be filled with incredible adventures, beautiful moments, and endless reasons to smile.</p>
+                    <p>With all my love,<br>Your LIBRA 💖</p>
+                </div>
+            </div>
+            <button class="pink-button" onclick="nextScene()">Next →</button>
+        </div>
+    </div>
+
+    <!-- Scene 7: Balloon Strings Message -->
+    <div class="scene" id="scene7">
+        <div class="content">
+            <div class="balloon-strings-container">
+                <div class="balloon-string-text">You are a Cutie MY GEMINI BY YOUR LIBRA</div>
+            </div>
+            <button class="pink-button" onclick="nextScene()">Next</button>
+        </div>
+    </div>
+
+    <!-- Scene 8: Final Gift Card -->
+    <div class="scene" id="scene8">
+        <div class="content">
+            <div class="final-gift-card">
+                <div class="gift-ribbon"></div>
+                <div class="final-balloons">🎈🎈🎈</div>
+                <h2 class="final-message">Happy BIRTHDAY To you MY EVERYTHING</h2>
+                <button class="pink-button" onclick="location.reload()">Replay</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
