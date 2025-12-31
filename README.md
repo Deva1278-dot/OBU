@@ -2,6 +2,12 @@
 
 A beautiful, interactive web-based birthday surprise created with HTML, CSS, and JavaScript. This vertical 9:16 aspect ratio experience is perfect for Instagram Reels-style sharing and mobile viewing.
 
+## 🌐 Live Website
+
+**View the surprise here:** [https://deva1278-dot.github.io/OBU/](https://deva1278-dot.github.io/OBU/)
+
+*(If the link doesn't work, make sure GitHub Pages is enabled in your repository settings)*
+
 ## ✨ Features
 
 - **8 Interactive Scenes** with smooth transitions
