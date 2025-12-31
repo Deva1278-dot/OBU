@@ -26,6 +26,21 @@ A beautiful, interactive web-based birthday surprise created with HTML, CSS, and
 
 ## 🚀 How to Use
 
+### Option 1: View on GitHub Pages (Recommended)
+
+1. Go to your repository: https://github.com/Deva1278-dot/OBU
+2. Click on **Settings** (top menu)
+3. Scroll down to **Pages** (left sidebar)
+4. Under **Source**, select **Deploy from a branch**
+5. Choose **main** branch and `/ (root)` folder
+6. Click **Save**
+7. Wait a few minutes for GitHub to build your site
+8. Your site will be available at: `https://deva1278-dot.github.io/OBU/`
+
+**Note:** GitHub Pages may take a few minutes to activate. Once enabled, you'll see the URL in the Pages settings section.
+
+### Option 2: View Locally
+
 1. Clone this repository:
    ```bash
    git clone https://github.com/Deva1278-dot/OBU.git
